@@ -1,9 +1,21 @@
-type Props = {};
+import { NavItem } from "../types/NavItem";
 
-function Navbar({}: Props) {
+type Props = {
+  data: NavItem[];
+  currentItem: NavItem;
+  handleClick: (item: NavItem) => void;
+};
+
+function Navbar({ data, currentItem, handleClick }: Props) {
+  const buildActiveClass = (item: NavItem) =>
+    item.id == currentItem.id ? "bg-gray-600" : "";
+
   return (
     <>
-      <header className="bg-transparent shadow-lg">
+      <header
+        className="bg-DarkBlueGray shadow-lg relative text-white"
+        style={{ zIndex: 10 }}
+      >
         <nav className="navbar max-w-screen-xl mx-auto">
           <div className="navbar-start">
             <div className="dropdown">
@@ -31,52 +43,42 @@ function Navbar({}: Props) {
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-                <li>
-                  <a>Item 1</a>
-                </li>
-                <li>
-                  <a>Parent</a>
-                  <ul className="p-2">
-                    <li>
-                      <a>Submenu 1</a>
-                    </li>
-                    <li>
-                      <a>Submenu 2</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a>Item 3</a>
-                </li>
+                {data.map((item) => (
+                  <li key={item.id} onClick={() => handleClick(item)}>
+                    <a
+                      href={item.url}
+                      className={`focus:text-white focus:bg-gray-600 ${buildActiveClass(
+                        item
+                      )}`}
+                    >
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
             <a className="btn btn-ghost text-xl">daisyUI</a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <details>
-                  <summary>Parent</summary>
-                  <ul className="p-2">
-                    <li>
-                      <a>Submenu 1</a>
-                    </li>
-                    <li>
-                      <a>Submenu 2</a>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              {data.map((item) => (
+                <li key={item.id} onClick={() => handleClick(item)}>
+                  <a
+                    href={item.url}
+                    className={`focus:text-white focus:bg-gray-600 ${buildActiveClass(
+                      item
+                    )}`}
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="btn">Button</a>
+            <a className="btn bg-GoldenYellow uppercase text-white hover:bg-GoldenOrange border-none outline-none">
+              Reserva ahora
+            </a>
           </div>
         </nav>
       </header>
