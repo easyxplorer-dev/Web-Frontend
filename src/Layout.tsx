@@ -1,19 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Navbar from "@components/Navbar";
 import { NavItems } from "./data/NavItems";
 import Footer from "@components/Footer";
-import Home from "./pages/Home";
+import { Outlet } from "react-router-dom";
 
 function Layout() {
   const [currentNavItem, setCurrentNavItem] = useState(NavItems[0]);
-  const [isVisible, setIsVisible] = useState(false);
-
-  // Manejar el evento de scroll
-  useEffect(() => {
-    const handleScroll = () => setIsVisible(window.scrollY > 0);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <>
@@ -24,7 +16,7 @@ function Layout() {
           handleClick={setCurrentNavItem}
         />
 
-        <Home isVisible={isVisible} />
+        <Outlet />
 
         <Footer />
       </section>

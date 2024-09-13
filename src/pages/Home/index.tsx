@@ -5,12 +5,18 @@ import Hero2 from "@components/Hero2";
 import TopScrollBtn from "@components/TopScrollBtn";
 import { Destinations } from "../../data/Destinations";
 import Logos from "./Logos";
+import { useEffect, useState } from "react";
 
-type Props = {
-  isVisible: boolean;
-};
+function Home() {
+  const [isVisible, setIsVisible] = useState(false);
 
-function Home({ isVisible }: Props) {
+  // Manejar el evento de scroll
+  useEffect(() => {
+    const handleScroll = () => setIsVisible(window.scrollY > 0);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <Hero />

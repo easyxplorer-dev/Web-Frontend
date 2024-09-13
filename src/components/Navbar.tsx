@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { NavItem } from "src/types/NavItem";
 
 type Props = {
@@ -45,32 +46,32 @@ function Navbar({ data, currentItem, handleClick }: Props) {
               >
                 {data.map((item) => (
                   <li key={item.id} onClick={() => handleClick(item)}>
-                    <a
-                      href={item.url}
+                    <Link
+                      to={item.url}
                       className={`focus:text-white focus:bg-gray-600 ${buildActiveClass(
                         item
                       )}`}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl">daisyUI</a>
+            <a className="btn btn-ghost text-xl">EasyXplorer</a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               {data.map((item) => (
                 <li key={item.id} onClick={() => handleClick(item)}>
-                  <a
-                    href={item.url}
+                  <Link
+                    to={item.url}
                     className={`focus:text-white focus:bg-gray-600 ${buildActiveClass(
                       item
                     )}`}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
