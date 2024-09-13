@@ -1,5 +1,5 @@
 import useEmblaCarousel from "embla-carousel-react";
-import { Destination } from "../types/Destination";
+import { Destination } from "src/types/Destination";
 import DestinationCard from "./DestinationCard";
 import AutoScroll from "embla-carousel-auto-scroll";
 

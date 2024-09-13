@@ -1,4 +1,4 @@
-import { Destination } from "../types/Destination";
+import { Destination } from "src/types/Destination";
 
 type Props = {
   data: Destination;

@@ -1,4 +1,4 @@
-import { NavItem } from "../types/NavItem";
+import { NavItem } from "src/types/NavItem";
 
 type Props = {
   data: NavItem[];
