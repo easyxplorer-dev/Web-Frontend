@@ -14,7 +14,7 @@ function DestinationCard({ data, extraClassName }: Props) {
       <figure className="w-full relative">
         <img
           src={data.img}
-          alt={`Destino ${data.name}`}
+          alt={`Nombre del destino ${data.name}`}
           className="object-cover"
           loading="lazy"
         />

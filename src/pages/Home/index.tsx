@@ -31,7 +31,7 @@ function Home() {
           direction="forward"
         />
         <Carousel
-          data={Destinations.slice(0, 6)}
+          data={Destinations.slice(2, undefined)}
           extraClassName=""
           direction="backward"
         />
