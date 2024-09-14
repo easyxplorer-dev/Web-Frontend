@@ -27,12 +27,12 @@ function Home() {
         </h2>
         <Carousel
           data={Destinations.slice(0, 6)}
-          extraClassName="mb-14"
+          extraClassName="mb-14 max-w-screen-2xl mx-auto"
           direction="forward"
         />
         <Carousel
-          data={Destinations.slice(2, undefined)}
-          extraClassName=""
+          data={Destinations.slice(2)}
+          extraClassName="max-w-screen-2xl mx-auto"
           direction="backward"
         />
       </section>

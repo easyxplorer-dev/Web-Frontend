@@ -21,7 +21,7 @@ function PackageDetailCarousel({ currentPackage }: Props) {
     <div className="embla">
       <div className="embla__viewport overflow-x-hidden" ref={emblaRef}>
         <div className="embla__container flex">
-          {currentPackage?.images.slice(1, undefined).map((image, idx) => (
+          {currentPackage?.images.slice(1).map((image, idx) => (
             <figure
               className="embla__slide mr-2 object-cover"
               key={idx}

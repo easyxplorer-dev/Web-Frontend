@@ -1,16 +1,11 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { NavItem } from "src/types/NavItem";
 
 type Props = {
   data: NavItem[];
-  currentItem: NavItem;
-  handleClick: (item: NavItem) => void;
 };
 
-function Navbar({ data, currentItem, handleClick }: Props) {
-  const buildActiveClass = (item: NavItem) =>
-    item.id == currentItem.id ? "bg-gray-600" : "";
-
+function Navbar({ data }: Props) {
   return (
     <>
       <header
@@ -45,15 +40,13 @@ function Navbar({ data, currentItem, handleClick }: Props) {
                 className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow bg-gray-700"
               >
                 {data.map((item) => (
-                  <li key={item.id} onClick={() => handleClick(item)}>
-                    <Link
+                  <li key={item.id}>
+                    <NavLink
                       to={item.url}
-                      className={`focus:text-white focus:bg-gray-600 ${buildActiveClass(
-                        item
-                      )}`}
+                      className={`focus:text-white focus:bg-gray-600`}
                     >
                       {item.name}
-                    </Link>
+                    </NavLink>
                   </li>
                 ))}
               </ul>
@@ -63,15 +56,13 @@ function Navbar({ data, currentItem, handleClick }: Props) {
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               {data.map((item) => (
-                <li key={item.id} onClick={() => handleClick(item)}>
-                  <Link
+                <li key={item.id}>
+                  <NavLink
                     to={item.url}
-                    className={`focus:text-white focus:bg-gray-600 ${buildActiveClass(
-                      item
-                    )}`}
+                    className={`focus:text-white focus:bg-gray-600`}
                   >
                     {item.name}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>
