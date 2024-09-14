@@ -1,4 +1,5 @@
 export type Package = {
+  id: number;
   images: string[];
   name: string;
   price: string;

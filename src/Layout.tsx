@@ -17,9 +17,8 @@ function Layout() {
         />
 
         <Outlet />
-
-        <Footer />
       </section>
+      <Footer />
     </>
   );
 }
