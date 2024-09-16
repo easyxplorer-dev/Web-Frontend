@@ -20,7 +20,7 @@ export const Data: Package[] = [
       "/src/assets/img/destinations/Roma4.webp",
       "/src/assets/img/destinations/SaoPaulo5.webp",
     ],
-    name: "Package 2",
+    name: "Package 1",
     price: "400.00",
     description: "Lorem ipsum",
     category: "Playa",

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Container from "./Container";
 import Search from "./Search";
 import useSearch from "./useSearch";
@@ -8,21 +8,15 @@ import { PackagesPerPage } from "src/consts";
 
 function Packages() {
   const searchRef = useRef<HTMLInputElement>(null);
-  const [page, setPage] = useState(1);
   const { data, handleSubmit } = useSearch({ searchRef });
-  const paginated = usePagination({ page, dataPerPage: PackagesPerPage });
+  const paginated = usePagination({ dataPerPage: PackagesPerPage });
 
   return (
     <section className="mb-4">
       <Search searchRef={searchRef} handleSubmit={handleSubmit} />
 
       <Container data={paginated} />
-      <Pagination
-        totalData={data.length}
-        dataPerPage={PackagesPerPage}
-        setCurrentPage={setPage}
-        currentPage={page}
-      />
+      <Pagination totalData={data.length} dataPerPage={PackagesPerPage} />
     </section>
   );
 }
