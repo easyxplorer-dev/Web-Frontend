@@ -6,7 +6,7 @@ type Props = {
 };
 
 export default function usePagination({ page, dataPerPage }: Props) {
-  const { packages } = useSearchStore();
+  const packages = useSearchStore((state) => state.packages);
   // El problema de la busqueda y paginación está aquí
   const lastPackageIndex = page * dataPerPage;
   const firstPackageIndex = lastPackageIndex - dataPerPage;

@@ -7,17 +7,15 @@ type Props = {
 };
 
 export default function useSearch({ searchRef }: Props) {
-  const { packages } = usePackagesStore();
-  const {
-    setPackages: setPackagesStore,
-    setQuery,
-    packages: searchPackages,
-  } = useSearchStore();
+  const packages = usePackagesStore((state) => state.packages);
+  const searchPackages = useSearchStore((state) => state.packages);
+  const setQuery = useSearchStore((state) => state.setQuery);
+  const setPackages = useSearchStore((state) => state.setPackages);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setQuery(searchRef.current?.value || "");
-    setPackagesStore(packages);
+    setPackages(packages);
   };
 
   return { data: searchPackages, handleSubmit };
