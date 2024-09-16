@@ -10,7 +10,6 @@ export default function usePagination({ page, dataPerPage }: Props) {
   // El problema de la busqueda y paginación está aquí
   const lastPackageIndex = page * dataPerPage;
   const firstPackageIndex = lastPackageIndex - dataPerPage;
-  console.log(packages);
 
   return packages.slice(firstPackageIndex, lastPackageIndex);
 }
