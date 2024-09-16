@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router";
-import { Data } from "../../data/Packages";
+import { Data } from "src/data/Packages";
 import { useEffect } from "react";
 import PackageDetailCarousel from "./PackageDetailCarousel";
 import Container from "./Container";

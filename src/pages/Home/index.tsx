@@ -3,7 +3,7 @@ import Carousel from "@components/Carousel";
 import Hero from "./Hero";
 import Hero2 from "@components/Hero2";
 import TopScrollBtn from "@components/TopScrollBtn";
-import { Destinations } from "../../data/Destinations";
+import { Destinations } from "src/data/Destinations";
 import Logos from "./Logos";
 import { useEffect, useState } from "react";
 
