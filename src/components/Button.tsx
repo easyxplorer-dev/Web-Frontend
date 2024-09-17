@@ -3,7 +3,7 @@ import { ButtonHTMLAttributes, ReactNode } from "react";
 type Props = {
   children: ReactNode;
   color: string;
-  outline: boolean;
+  outline?: boolean;
   size?: "lg" | "sm" | "xs" | undefined;
   variant?: "button" | "submit" | "reset";
   extraClassName?: string;
