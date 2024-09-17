@@ -1,6 +1,6 @@
 function Hero2() {
   return (
-    <section className="min-h-screen">
+    <section className="my-6">
       <div
         className="w-full h-[35rem] bg-fixed bg-center bg-no-repeat relative bg-cover"
         style={{

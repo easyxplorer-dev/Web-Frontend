@@ -3,11 +3,14 @@ import AnimatedLink from "./AnimatedLink";
 
 type Props = {
   item: Package;
+  extraClassName?: string;
 };
 
-function PackageCard({ item }: Props) {
+function PackageCard({ item, extraClassName }: Props) {
   return (
-    <div className="card bg-base-100 w-full shadow-xl transition hover:scale-105 border-t-4 border-t border-MaizeYellow max-w-md md:max-w-auto mx-auto md:mx-0">
+    <div
+      className={`card bg-base-100 w-full shadow-xl transition hover:scale-105 border-t-4 border-t border-MaizeYellow max-w-md md:max-w-auto mx-auto md:mx-0 ${extraClassName}`}
+    >
       <figure>
         <img
           src={item.images[0]}

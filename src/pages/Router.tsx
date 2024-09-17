@@ -4,7 +4,7 @@ import Home from "./Home";
 import Packages from "./Packages";
 import Contacts from "./Contacts";
 import About from "./About";
-import PackageDetail from "./Packages/PackageDetail";
+import PackageDetail from "./Packages/Detail/PackageDetail";
 import ErrorPage from "./ErrorPage";
 
 const router = createBrowserRouter([

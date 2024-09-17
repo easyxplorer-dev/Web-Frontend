@@ -2,8 +2,8 @@ import { useNavigate, useParams } from "react-router";
 import { Data } from "src/data/Packages";
 import { useEffect } from "react";
 import PackageDetailCarousel from "./PackageDetailCarousel";
-import Container from "./Container";
 import AnimatedLink from "@components/AnimatedLink";
+import RecommendedCarousel from "./RecommendedCarousel";
 
 function PackageDetail() {
   const params = useParams();
@@ -70,7 +70,10 @@ function PackageDetail() {
           </article>
         </section>
         <hr />
-        <Container data={recommendedPackages} extraClassName="py-6" />
+        <RecommendedCarousel
+          data={recommendedPackages}
+          options={{ loop: true }}
+        />
       </section>
     </>
   );
