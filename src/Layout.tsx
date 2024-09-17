@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 function Layout() {
   return (
     <>
-      <section className="bg-[#000000e8] min-h-screen overflow-hidden relative">
+      <section className="bg-[#1c2229] min-h-screen overflow-hidden relative">
         <Navbar data={NavItems} />
 
         <Outlet />

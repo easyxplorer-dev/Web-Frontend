@@ -68,7 +68,7 @@ function Navbar({ data }: Props) {
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="btn bg-GoldenYellow uppercase text-white hover:bg-GoldenOrange border-none outline-none">
+            <a className="btn btn-sm bg-GoldenYellow uppercase text-white hover:bg-GoldenOrange border-none outline-none">
               Reserva ahora
             </a>
           </div>

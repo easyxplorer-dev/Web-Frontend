@@ -11,7 +11,7 @@ function Search({ handleSubmit, searchRef }: Props) {
       className="my-4 max-w-7xl mx-4 md:mx-auto"
       onSubmit={(e) => handleSubmit(e)}
     >
-      <label className="input input-bordered flex items-center gap-2">
+      <label className="input input-bordered flex items-center gap-2 bg-white text-black">
         <input
           type="search"
           className="grow"

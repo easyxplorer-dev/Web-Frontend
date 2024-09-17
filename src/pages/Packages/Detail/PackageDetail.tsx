@@ -26,7 +26,7 @@ function PackageDetail() {
         Volver
       </AnimatedLink>
       <section className="max-w-7xl mx-auto my-4 mt-16">
-        <section className="grid grid-cols-1 md:grid-cols-2 mx-4 md:mx-0 gap-4">
+        <section className="grid grid-cols-1 md:grid-cols-2 mx-4 md:mx-0 gap-4 min-h-[70vh]">
           <figure className="mx-auto ">
             <img
               loading="lazy"
@@ -70,10 +70,15 @@ function PackageDetail() {
           </article>
         </section>
         <hr />
-        <RecommendedCarousel
-          data={recommendedPackages}
-          options={{ loop: true }}
-        />
+        <section>
+          <h3 className="text-4xl my-8 text-center text-white">
+            Productos que recomendamos
+          </h3>
+          <RecommendedCarousel
+            data={recommendedPackages}
+            options={{ loop: true }}
+          />
+        </section>
       </section>
     </>
   );
