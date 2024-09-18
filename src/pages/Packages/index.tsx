@@ -16,7 +16,11 @@ function Packages() {
       <Search searchRef={searchRef} handleSubmit={handleSubmit} />
 
       <Container data={paginated} />
-      <Pagination totalData={data.length} dataPerPage={PackagesPerPage} />
+      <Pagination
+        paginatedData={paginated}
+        totalData={data.length}
+        dataPerPage={PackagesPerPage}
+      />
     </section>
   );
 }

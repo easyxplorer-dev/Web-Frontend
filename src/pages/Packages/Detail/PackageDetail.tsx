@@ -30,11 +30,12 @@ function PackageDetail() {
           <figure
             className="mx-auto bg-cover bg-noreapeat bg-center flex relative"
             style={{
-              backgroundImage: "url('/src/assets/packagesBg.svg')",
+              backgroundImage: "url('/packagesBg.svg')",
             }}
           >
             <img
               loading="lazy"
+              id="packageImgPrime"
               className="object-cover m-auto"
               style={{ viewTransitionName: `packageImg${currentPackage?.id}` }}
               src={currentPackage?.images[0]}

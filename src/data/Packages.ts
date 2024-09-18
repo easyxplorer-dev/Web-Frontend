@@ -4,9 +4,11 @@ export const Data: Package[] = [
   {
     id: 1,
     images: [
-      "/src/assets/img/destinations/SouthAfrica1.webp",
-      "/src/assets/img/destinations/Paris2.webp",
-      "/src/assets/img/destinations/SaoPaulo5.webp",
+      "/img/destinations/SouthAfrica1.webp",
+      "/img/destinations/Paris2.webp",
+      "/img/destinations/SaoPaulo5.webp",
+      "/img/destinations/Roma4.webp",
+      "/img/destinations/SouthAfrica1.webp",
     ],
     name: "Package 1",
     price: "5",
@@ -17,8 +19,8 @@ export const Data: Package[] = [
   {
     id: 2,
     images: [
-      "/src/assets/img/destinations/Roma4.webp",
-      "/src/assets/img/destinations/SaoPaulo5.webp",
+      "/img/destinations/Roma4.webp",
+      "/img/destinations/SaoPaulo5.webp",
     ],
     name: "Package 1",
     price: "400.00",
@@ -29,8 +31,8 @@ export const Data: Package[] = [
   {
     id: 3,
     images: [
-      "/src/assets/img/destinations/SaoPaulo5.webp",
-      "/src/assets/img/destinations/SouthAfrica1.webp",
+      "/img/destinations/SaoPaulo5.webp",
+      "/img/destinations/SouthAfrica1.webp",
     ],
     name: "Package 3",
     price: "500.19",
@@ -40,10 +42,7 @@ export const Data: Package[] = [
   },
   {
     id: 4,
-    images: [
-      "/src/assets/img/destinations/Paris2.webp",
-      "/src/assets/img/destinations/Cancun3.webp",
-    ],
+    images: ["/img/destinations/Paris2.webp", "/img/destinations/Cancun3.webp"],
     name: "Package 4",
     price: "600.80",
     description: "Lorem ipsum",
@@ -52,7 +51,7 @@ export const Data: Package[] = [
   },
   {
     id: 5,
-    images: ["/src/assets/img/destinations/Roma4.webp"],
+    images: ["/img/destinations/Roma4.webp"],
     name: "Package 5",
     price: "1000.99",
     description: "Lorem ipsum",

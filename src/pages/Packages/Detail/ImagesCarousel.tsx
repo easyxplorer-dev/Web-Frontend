@@ -1,5 +1,5 @@
 import useEmblaCarousel from "embla-carousel-react";
-import { useCallback } from "react";
+import { MouseEvent, useCallback } from "react";
 import { Package } from "src/types/Package";
 
 type Props = {
@@ -17,20 +17,36 @@ function ImagesCarousel({ currentPackage }: Props) {
   const scrollNext = useCallback(() => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
+
+  const handleClick = (
+    e: MouseEvent<HTMLImageElement, globalThis.MouseEvent>
+  ) => {
+    const bigImg = document.getElementById("packageImgPrime");
+    if (!bigImg) return;
+    const target = e.target as HTMLImageElement;
+    const targetImgNewSrc =
+      bigImg.getAttribute("src") || target.getAttribute("src") || "";
+    const bigImgNewSrc =
+      target.getAttribute("src") || bigImg.getAttribute("src") || "";
+    target.setAttribute("src", targetImgNewSrc);
+    bigImg.setAttribute("src", bigImgNewSrc);
+  };
+
   return (
-    <div className="embla">
+    <div className="embla p-4">
       <div className="embla__viewport overflow-x-hidden" ref={emblaRef}>
         <div className="embla__container flex">
           {currentPackage?.images.slice(1).map((image, idx) => (
             <figure
-              className="embla__slide mr-2 object-cover"
+              className="embla__slide object-cover mr-2"
               key={idx}
               style={{ flex: "0 0 35%" }}
             >
               <img
                 loading="lazy"
-                className="w-52"
+                className="w-52 border-b border-b-4 border-GoldenYellow rounded-lg cursor-pointer"
                 src={image}
+                onClick={(e) => handleClick(e)}
                 alt={`Imagen número ${idx} del paquete ${currentPackage.name}`}
               />
             </figure>

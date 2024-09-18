@@ -1,13 +1,15 @@
 import { usePackagesStore } from "src/store/packages";
 import { usePaginationStore } from "src/store/pagination";
 import Button from "./Button";
+import { Package } from "src/types/Package";
 
 type Props = {
   totalData: number;
   dataPerPage: number;
+  paginatedData: Package[];
 };
 
-function Pagination({ totalData, dataPerPage }: Props) {
+function Pagination({ totalData, dataPerPage, paginatedData }: Props) {
   const currentPage = usePaginationStore((state) => state.page);
   const setCurrentPage = usePaginationStore((state) => state.setPage);
   const totalPages = Math.ceil(totalData / dataPerPage);
@@ -25,7 +27,8 @@ function Pagination({ totalData, dataPerPage }: Props) {
   return (
     <div className="flex justify-between gap-4 my-6 flex-wrap mx-4 max-w-7xl md:mx-auto items-center">
       <p className="text-white">
-        Mostrando <span className="text-blue-400 font-bold">{totalData}</span>{" "}
+        Mostrando{" "}
+        <span className="text-blue-400 font-bold">{paginatedData.length}</span>{" "}
         regístros de{" "}
         <span className="text-blue-400 font-bold">{packages.length}</span> en
         total
