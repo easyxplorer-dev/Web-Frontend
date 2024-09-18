@@ -16,7 +16,7 @@ const emailJsPublicId = import.meta.env.VITE_EMAILJS_PUBLIC_ID;
 
 function Contacts() {
   const [isValidRecaptcha, setIsValidRecaptcha] = useState(false);
-  const recaptchaRef = useRef(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
   const formRef = useRef<HTMLFormElement>(null);
   const handleCaptcha = (value: string | null) => {
     setIsValidRecaptcha(value ? true : false);

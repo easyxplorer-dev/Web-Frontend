@@ -6,10 +6,10 @@ type Props = {
   extraClassName?: string;
 };
 
-function PackageCard({ item, extraClassName }: Props) {
+function PackageCard({ item, extraClassName = "" }: Props) {
   return (
     <div
-      className={`card bg-[#24262F] w-full shadow-xl transition hover:scale-105 border-t-4 border-t border-MaizeYellow max-w-md md:max-w-auto mx-auto md:mx-0 ${extraClassName}`}
+      className={`card bg-[#24262F] w-full transition hover:scale-105 border-t-4 border-t border-MaizeYellow max-w-md md:max-w-auto mx-auto md:mx-0 ${extraClassName}`}
     >
       <figure>
         <img

@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router";
 import { Data } from "src/data/Packages";
 import { useEffect } from "react";
-import PackageDetailCarousel from "./PackageDetailCarousel";
+import ImagesCarousel from "./ImagesCarousel";
 import AnimatedLink from "@components/AnimatedLink";
 import RecommendedCarousel from "./RecommendedCarousel";
 
@@ -25,12 +25,17 @@ function PackageDetail() {
       <AnimatedLink to={"/packages"} tag={"button"} extraClassName="btn m-6">
         Volver
       </AnimatedLink>
-      <section className="max-w-7xl mx-auto my-4 mt-16">
+      <section className="max-w-7xl mx-4 md:mx-auto my-4 mt-16">
         <section className="grid grid-cols-1 md:grid-cols-2 mx-4 md:mx-0 gap-4 min-h-[70vh]">
-          <figure className="mx-auto ">
+          <figure
+            className="mx-auto bg-cover bg-noreapeat bg-center flex relative"
+            style={{
+              backgroundImage: "url('/src/assets/packagesBg.svg')",
+            }}
+          >
             <img
               loading="lazy"
-              className="object-cover"
+              className="object-cover m-auto"
               style={{ viewTransitionName: `packageImg${currentPackage?.id}` }}
               src={currentPackage?.images[0]}
               alt={`Imagen del paquete ${currentPackage?.name}`}
@@ -65,7 +70,7 @@ function PackageDetail() {
               </button>
             </div>
             {currentPackage && currentPackage?.images.length > 1 && (
-              <PackageDetailCarousel currentPackage={currentPackage} />
+              <ImagesCarousel currentPackage={currentPackage} />
             )}
           </article>
         </section>

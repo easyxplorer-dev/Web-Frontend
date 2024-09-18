@@ -6,7 +6,7 @@ type Props = {
   currentPackage: Package;
 };
 
-function PackageDetailCarousel({ currentPackage }: Props) {
+function ImagesCarousel({ currentPackage }: Props) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "start",
@@ -49,4 +49,4 @@ function PackageDetailCarousel({ currentPackage }: Props) {
   );
 }
 
-export default PackageDetailCarousel;
+export default ImagesCarousel;
