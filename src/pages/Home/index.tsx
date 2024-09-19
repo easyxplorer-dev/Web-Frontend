@@ -41,6 +41,24 @@ function Home() {
 
       <Hero2 />
 
+      <div className="stats w-full border border-info max-w-2xl flex mx-auto">
+        <div className="stat place-items-center">
+          <div className="stat-title">Destinos</div>
+          <div className="stat-value">50+</div>
+        </div>
+
+        <div className="stat place-items-center">
+          <div className="stat-title">Clientes</div>
+          <div className="stat-value text-secondary">100+</div>
+        </div>
+
+        <div className="stat place-items-center">
+          <div className="stat-title">New Registers</div>
+          <div className="stat-value">1,200</div>
+          <div className="stat-desc">↘︎ 90 (14%)</div>
+        </div>
+      </div>
+
       <TopScrollBtn isVisible={isVisible}>
         <FiArrowUp className="w-7 h-7" />
       </TopScrollBtn>
