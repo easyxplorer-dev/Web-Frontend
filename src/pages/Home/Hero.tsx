@@ -1,13 +1,12 @@
-import { BiTransfer } from "react-icons/bi";
-import { FiPackage } from "react-icons/fi";
-import { IoBoatOutline, IoCarOutline } from "react-icons/io5";
-import {
-  MdImportExport,
-  MdOutlineAirplaneTicket,
-  MdOutlineHotel,
-  MdOutlineSecurity,
-} from "react-icons/md";
+import PlaneDeparture from "@components/Icons/PlaneDeparture";
 import HeroIcon from "./HeroIcon";
+import Bed from "@components/Icons/Bed";
+import Car from "@components/Icons/Car";
+import SpeedBoat from "@components/Icons/SpeedBoat";
+import ArrowsUpDown from "@components/Icons/ArrowsUpDown";
+import Package from "@components/Icons/Package";
+import ShieldCheck from "@components/Icons/ShieldCheck";
+import ArrowsRightLeft from "@components/Icons/ArrowsRightLeft";
 
 function Hero() {
   return (
@@ -26,28 +25,28 @@ function Hero() {
         </div>
         <div className="bg-transparent text-black w-full rounded-lg p-2 shadow hover:shadow-lg transition flex gap-4 flex-wrap justify-evenly">
           <HeroIcon label="Tickets de avión">
-            <MdOutlineAirplaneTicket className="w-full h-full" />
+            <PlaneDeparture />
           </HeroIcon>
           <HeroIcon label="Hoteles">
-            <MdOutlineHotel className="w-full h-full" />
+            <Bed />
           </HeroIcon>
           <HeroIcon label="Renta de autos">
-            <IoCarOutline className="w-full h-full" />
+            <Car />
           </HeroIcon>
           <HeroIcon label="Cruceros">
-            <IoBoatOutline className="w-full h-full" />
+            <SpeedBoat />
           </HeroIcon>
           <HeroIcon label="Transfers">
-            <BiTransfer className="w-full h-full" />
+            <ArrowsUpDown />
           </HeroIcon>
           <HeroIcon label="Paquetes vacacionales">
-            <FiPackage className="w-full h-full" />
+            <Package />
           </HeroIcon>
           <HeroIcon label="Seguro de viajes">
-            <MdOutlineSecurity className="w-full h-full" />
+            <ShieldCheck />
           </HeroIcon>
           <HeroIcon label="Importación y exportación">
-            <MdImportExport className="w-full h-full" />
+            <ArrowsRightLeft />
           </HeroIcon>
         </div>
       </div>

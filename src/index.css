@@ -9,6 +9,13 @@
   }
 }
 
+body {
+  cursor: url("/icons/planeTilt.svg") 6.5 6.5, auto !important
+}
+button, a, img {
+  cursor: url("/icons/planeTilt.svg") 6.5 6.5, auto !important
+}
+
 header > nav ul > li a.active {
   background-color: rgba(75, 85, 99, 1) !important;
 }

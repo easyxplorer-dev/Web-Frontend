@@ -1,14 +1,15 @@
 import Button from "@components/Button";
 import { ChangeEvent, FormEvent, ReactNode, useRef, useState } from "react";
-import { LuMail, LuMapPin, LuPhone, LuUser } from "react-icons/lu";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
-import {
-  IoLogoFacebook,
-  IoLogoInstagram,
-  IoLogoWhatsapp,
-} from "react-icons/io5";
-import { FaXTwitter } from "react-icons/fa6";
+import MapPin from "@components/Icons/MapPin";
+import Phone from "@components/Icons/Phone";
+import Mail from "@components/Icons/Mail";
+import BrandWhatsApp from "@components/Icons/BrandWhatsApp";
+import BrandInstagram from "@components/Icons/BrandInstagram";
+import BrandFacebook from "@components/Icons/BrandFacebook";
+import BrandX from "@components/Icons/BrandX";
+import User from "@components/Icons/User";
 const recaptchaPublicKey = import.meta.env.VITE_RECAPTCHA_PUBLIC_KEY;
 const emailJsServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const emailJsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -93,7 +94,7 @@ function Contacts() {
                 Puedes encontrarnos en
               </h3>
               <div className="flex items-center gap-2 text-white">
-                <LuMapPin className="w-5 h-5" />
+                <MapPin extraClassName="w-5 h-5" />
                 <p className="text-gray-400">Ubicación</p>
               </div>
             </div>
@@ -102,15 +103,15 @@ function Contacts() {
                 O si prefieres contactarnos por
               </h3>
               <div className="flex items-center gap-2 text-white">
-                <LuPhone className="w-5 h-5" />
+                <Phone extraClassName="w-5 h-5" />
                 <p className="text-gray-400">+593 000 0000</p>
               </div>
               <div className="flex items-center gap-2 text-white">
-                <LuPhone className="w-5 h-5" />
+                <Phone extraClassName="w-5 h-5" />
                 <p className="text-gray-400">+593 111 1111</p>
               </div>
               <div className="flex items-center gap-2 text-white">
-                <LuMail className="w-5 h-5" />
+                <Mail extraClassName="w-5 h-5" />
                 <p className="text-gray-400">example@easyxplorer.com</p>
               </div>
             </div>
@@ -123,25 +124,25 @@ function Contacts() {
                   url=""
                   extraClassName="hover:bg-[#4dc247] hover:text-white"
                 >
-                  <IoLogoWhatsapp className="w-8 h-8" />
+                  <BrandWhatsApp extraClassName="w-8 h-8" />
                 </SocialsCard>
                 <SocialsCard
                   url=""
                   extraClassName="hover:bg-gradient-to-r hover:from-[#833ab4] hover:via-[#fd1d1d] hover:to-[#fcb045] hover:text-white"
                 >
-                  <IoLogoInstagram className="w-8 h-8" />
+                  <BrandInstagram extraClassName="w-8 h-8" />
                 </SocialsCard>
                 <SocialsCard
                   url=""
                   extraClassName="hover:bg-[#3b5998] hover:text-white"
                 >
-                  <IoLogoFacebook className="w-8 h-8" />
+                  <BrandFacebook extraClassName="w-8 h-8" />
                 </SocialsCard>
                 <SocialsCard
                   url=""
                   extraClassName="hover:bg-black hover:text-white"
                 >
-                  <FaXTwitter className="w-8 h-8" />
+                  <BrandX extraClassName="w-8 h-8" />
                 </SocialsCard>
               </div>
             </div>
@@ -157,7 +158,7 @@ function Contacts() {
               {/* Fullname */}
               <div className="flex gap-4 flex-wrap mb-4">
                 <label className="input input-bordered flex items-center gap-2 flex-1">
-                  <LuUser />
+                  <User extraClassName="w-6" />
                   <input
                     type="text"
                     className="grow"
@@ -175,7 +176,7 @@ function Contacts() {
                   ></span>
                 </label>
                 <label className="input input-bordered flex items-center gap-2 flex-1">
-                  <LuUser />
+                  <User extraClassName="w-6" />
                   <input
                     type="text"
                     className="grow"
@@ -195,7 +196,7 @@ function Contacts() {
               </div>
               {/* Email */}
               <label className="input input-bordered flex items-center gap-2">
-                <LuMail />
+                <Mail extraClassName="w-6" />
                 <input
                   type="email"
                   className="grow"

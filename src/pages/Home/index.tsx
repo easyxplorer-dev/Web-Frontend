@@ -1,4 +1,3 @@
-import { FiArrowUp } from "react-icons/fi";
 import Carousel from "@components/Carousel";
 import Hero from "./Hero";
 import Hero2 from "@components/Hero2";
@@ -6,6 +5,7 @@ import TopScrollBtn from "@components/TopScrollBtn";
 import { Destinations } from "src/data/Destinations";
 import Logos from "./Logos";
 import { useEffect, useState } from "react";
+import ArrowUp from "@components/Icons/ArrowUp";
 
 function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -60,7 +60,7 @@ function Home() {
       </div>
 
       <TopScrollBtn isVisible={isVisible}>
-        <FiArrowUp className="w-7 h-7" />
+        <ArrowUp extraClassName="w-7 h-7" />
       </TopScrollBtn>
     </>
   );
