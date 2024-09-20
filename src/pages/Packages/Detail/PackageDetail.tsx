@@ -26,17 +26,12 @@ function PackageDetail() {
         Volver
       </AnimatedLink>
       <section className="max-w-7xl mx-4 md:mx-auto my-4 mt-16">
-        <section className="grid grid-cols-1 md:grid-cols-2 mx-4 md:mx-0 gap-4 min-h-[70vh]">
-          <figure
-            className="mx-auto bg-cover bg-noreapeat bg-center flex relative"
-            style={{
-              backgroundImage: "url('/packagesBg.svg')",
-            }}
-          >
+        <section className="grid grid-cols-1 md:grid-cols-2 mx-4 md:mx-0 gap-4">
+          <figure className="mx-auto bg-cover bg-noreapeat bg-center relative">
             <img
               loading="lazy"
               id="packageImgPrime"
-              className="object-cover m-auto"
+              className="object-cover"
               style={{ viewTransitionName: `packageImg${currentPackage?.id}` }}
               src={currentPackage?.images[0]}
               alt={`Imagen del paquete ${currentPackage?.name}`}

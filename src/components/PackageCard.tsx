@@ -9,7 +9,7 @@ type Props = {
 function PackageCard({ item, extraClassName = "" }: Props) {
   return (
     <div
-      className={`card bg-[#24262F] w-full transition hover:scale-105 border-t-4 border-t border-MaizeYellow max-w-md md:max-w-auto mx-auto md:mx-0 ${extraClassName}`}
+      className={`card bg-[#24262F] w-full transition hover:scale-105 border-t-4 border-t border-GoldenYellow max-w-md md:max-w-auto mx-auto md:mx-0 ${extraClassName}`}
     >
       <figure>
         <img

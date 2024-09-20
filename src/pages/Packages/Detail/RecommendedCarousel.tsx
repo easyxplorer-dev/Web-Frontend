@@ -7,6 +7,7 @@ import {
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useRef } from "react";
 import { Package } from "src/types/Package";
+import ClassNames from "embla-carousel-class-names";
 
 type Props = {
   data: Package[];
@@ -18,7 +19,9 @@ const numberWithinRange = (number: number, min: number, max: number): number =>
   Math.min(Math.max(number, min), max);
 
 function RecommendedCarousel({ data }: Props) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    ClassNames({ snapped: "active" }),
+  ]);
   const tweenFactor = useRef(0);
   const tweenNodes = useRef<HTMLElement[]>([]);
 
@@ -89,19 +92,22 @@ function RecommendedCarousel({ data }: Props) {
   }, [emblaApi, tweenScale, setTweenFactor, setTweenNodes]);
 
   return (
-    <div className="embla mb-14 max-w-[40rem] mx-auto overflow-x-hidden p-4">
-      <div className="embla__viewport overflow-hidden" ref={emblaRef}>
+    <div className="embla mb-14 max-w-[40rem] mx-auto p-4">
+      <div className="embla__viewport" ref={emblaRef}>
         <div
           className="embla__container flex"
           style={{ touchAction: "pan-y pinch-zoom", marginLeft: "-1rem" }}
         >
           {data.map((item) => (
             <div
-              className="embla__slide pl-[1rem]"
+              className="embla__slide pl-[0.5rem] embla__class-names"
               style={{ flex: "0 0 55%", transform: "translate3d(0, 0, 0)" }}
               key={item.id}
             >
-              <PackageCard item={item} />
+              <PackageCard
+                item={item}
+                extraClassName="shadow-lg shadow-GoldenYellow/50"
+              />
             </div>
           ))}
         </div>
