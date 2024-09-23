@@ -51,7 +51,9 @@ function Navbar({ data }: Props) {
                 ))}
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl">EasyXplorer</a>
+            <NavLink to={"/"} className="btn btn-ghost text-xl">
+              EasyXplorer
+            </NavLink>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
