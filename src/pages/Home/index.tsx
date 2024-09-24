@@ -1,28 +1,16 @@
 import Carousel from "@components/Carousel";
-import Hero from "./Hero";
 import Hero2 from "@components/Hero2";
-import TopScrollBtn from "@components/TopScrollBtn";
 import { Destinations } from "src/data/Destinations";
+import Hero from "./Hero";
 import Logos from "./Logos";
-import { useEffect, useState } from "react";
-import ArrowUp from "@components/Icons/ArrowUp";
 
 function Home() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  // Manejar el evento de scroll
-  useEffect(() => {
-    const handleScroll = () => setIsVisible(window.scrollY > 0);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <>
       <Hero />
 
-      <section className="mb-14" id="destinations">
-        <h2 className="text-4xl font-title2 font-bold mb-10 text-GoldenOrange uppercase text-center">
+      <section className="" id="destinations">
+        <h2 className="text-4xl font-title mb-10 text-GoldenOrange uppercase text-center">
           Conoce nuestros destinos
         </h2>
         <Carousel
@@ -58,10 +46,6 @@ function Home() {
           <div className="stat-desc">↘︎ 90 (14%)</div>
         </div>
       </div>
-
-      <TopScrollBtn isVisible={isVisible}>
-        <ArrowUp extraClassName="w-7 h-7" />
-      </TopScrollBtn>
     </>
   );
 }

@@ -106,7 +106,7 @@ function RecommendedCarousel({ data }: Props) {
             >
               <PackageCard
                 item={item}
-                extraClassName="shadow-lg shadow-GoldenYellow/50"
+                extraClassName="shadow-lg shadow-GoldenYellow/50 w-full"
               />
             </div>
           ))}

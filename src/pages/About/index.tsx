@@ -33,7 +33,7 @@ function About() {
       <section className="max-w-7xl mx-auto py-4">
         <article className="my-12 flex flex-wrap gap-4 justify-between mb-24">
           <section className="max-w-4xl mx-auto">
-            <h2 className="text-6xl md:text-7xl text-white protest-guerrilla-regular font-bolder uppercase tracking-wider text-center mb-4">
+            <h2 className="text-5xl md:text-7xl text-white font-title font-bolder uppercase tracking-wider text-center mb-4">
               Quienes Somos
             </h2>
             <p className="text-white text-sm md:text-lg font-text max-w-lg mx-auto mb-2">
@@ -54,6 +54,9 @@ function About() {
             <img
               className="w-full h-full rounded-lg object-cover"
               loading="lazy"
+              style={{
+                maskImage: "linear-gradient(black 90%, transparent)",
+              }}
               src="https://plus.unsplash.com/premium_photo-1663012992954-cf8c909be7bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
@@ -87,10 +90,10 @@ function About() {
           <div className="hero-content flex-col lg:flex-row">
             <img
               src="https://plus.unsplash.com/premium_photo-1663012992954-cf8c909be7bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="max-w-sm rounded-lg "
+              className="max-w-sm rounded-lg"
             />
             <div className="text-end">
-              <h1 className="text-5xl font-bold protest-guerrilla-regular uppercase">
+              <h1 className="text-5xl font-bold font-title uppercase">
                 Misión
               </h1>
               <p className="py-6 max-w-lg">
@@ -108,7 +111,7 @@ function About() {
         <div className="my-8">
           <div className="hero-content flex-col lg:flex-row">
             <div className="text-start">
-              <h1 className="text-5xl font-bold protest-guerrilla-regular uppercase">
+              <h1 className="text-5xl font-bold font-title uppercase">
                 Visión
               </h1>
               <p className="py-6 max-w-lg">
@@ -128,7 +131,7 @@ function About() {
           </div>
         </div>
         <section className="my-8">
-          <h2 className="text-3xl text-center font-title2 text-white font-bold mb-4">
+          <h2 className="text-4xl text-center font-title text-white mb-4">
             Nuestro equipo
           </h2>
           <article className="flex gap-1 justify-evenly">

@@ -16,37 +16,43 @@ function Hero() {
     >
       <div className="hero-content text-center flex-col">
         <div className="max-w-scree-xl">
-          <p className="text-2xl font-[700] uppercase font-title text-white">
-            Bienvenido a EasyXplorer
+          <p className="text-2xl uppercase font-title text-white flex justify-center items-center mx-auto flex-wrap">
+            <span>Bienvenido a </span>
+            <img
+              src="/img/easyxplorerLogo.webp"
+              loading="lazy"
+              className="object-cover h-44"
+              alt="Logo de easyxplorer"
+            />
           </p>
-          <h1 className="py-6 text-6xl font-[700] uppercase font-title text-GoldenYellow">
-            Viajar nunca fué tan fácil
+          <h1 className="text-4xl md:text-7xl uppercase font-title text-GoldenYellow">
+            Lideres en viajes
           </h1>
         </div>
         <div className="bg-transparent text-black w-full rounded-lg p-2 shadow hover:shadow-lg transition flex gap-4 flex-wrap justify-evenly">
           <HeroIcon label="Tickets de avión">
-            <PlaneDeparture />
+            <PlaneDeparture extraClassName="w-6 h-6 md:w-10 md:h-10" />
           </HeroIcon>
           <HeroIcon label="Hoteles">
-            <Bed />
+            <Bed extraClassName="w-6 h-6 md:w-10 md:h-10" />
           </HeroIcon>
           <HeroIcon label="Renta de autos">
-            <Car />
+            <Car extraClassName="w-6 h-6 md:w-10 md:h-10" />
           </HeroIcon>
           <HeroIcon label="Cruceros">
-            <SpeedBoat />
+            <SpeedBoat extraClassName="w-6 h-6 md:w-10 md:h-10" />
           </HeroIcon>
           <HeroIcon label="Transfers">
-            <ArrowsUpDown />
+            <ArrowsUpDown extraClassName="w-6 h-6 md:w-10 md:h-10" />
           </HeroIcon>
           <HeroIcon label="Paquetes vacacionales">
-            <Package />
+            <Package extraClassName="w-6 h-6 md:w-10 md:h-10" />
           </HeroIcon>
           <HeroIcon label="Seguro de viajes">
-            <ShieldCheck />
+            <ShieldCheck extraClassName="w-6 h-6 md:w-10 md:h-10" />
           </HeroIcon>
           <HeroIcon label="Importación y exportación">
-            <ArrowsRightLeft />
+            <ArrowsRightLeft extraClassName="w-6 h-6 md:w-10 md:h-10" />
           </HeroIcon>
         </div>
       </div>

@@ -21,7 +21,9 @@ header > nav ul > li a.active {
 }
 
 .font-title {
-  font-family: "Lato", sans-serif;
+  /*font-family: "Lato", sans-serif;*/
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -32,11 +34,5 @@ header > nav ul > li a.active {
 
 .font-title2 {
   font-family: "Open Sans", sans-serif;
-  font-style: normal;
-}
-
-.protest-guerrilla-regular {
-  font-family: "Protest Guerrilla", sans-serif;
-  font-weight: 400;
   font-style: normal;
 }

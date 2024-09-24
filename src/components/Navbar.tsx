@@ -51,7 +51,10 @@ function Navbar({ data }: Props) {
                 ))}
               </ul>
             </div>
-            <NavLink to={"/"} className="btn btn-ghost text-xl">
+            <NavLink
+              to={"/"}
+              className="btn btn-ghost text-xl hidden sm:inline-flex"
+            >
               EasyXplorer
             </NavLink>
           </div>
