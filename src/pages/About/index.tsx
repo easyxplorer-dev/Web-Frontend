@@ -134,7 +134,7 @@ function About() {
           <h2 className="text-4xl text-center font-title text-white mb-4">
             Nuestro equipo
           </h2>
-          <article className="flex gap-1 justify-evenly">
+          <article className="flex gap-1 justify-evenly flex-wrap">
             {Members.map((member) => (
               <TeamCard member={member} key={member.id} />
             ))}
