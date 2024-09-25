@@ -3,27 +3,27 @@ import { Destination } from "src/types/Destination";
 export const Destinations: Destination[] = [
   {
     id: 1,
-    img: "/img/destinations/SouthAfrica1.webp",
+    img: "/img/destinations/SouthAfrica.webp",
     name: "Sudáfrica",
   },
   {
     id: 2,
-    img: "/img/destinations/Paris2.webp",
+    img: "/img/destinations/Paris.webp",
     name: "Paris",
   },
   {
     id: 3,
-    img: "/img/destinations/Cacun3.webp",
+    img: "/img/destinations/Cancun.webp",
     name: "Cancún",
   },
   {
     id: 4,
-    img: "/img/destinations/Roma4.webp",
+    img: "/img/destinations/Roma.webp",
     name: "Roma",
   },
   {
     id: 5,
-    img: "/img/destinations/SaoPaulo5.webp",
+    img: "/img/destinations/SaoPaulo.webp",
     name: "Sao Paulo",
   },
   {
@@ -33,12 +33,12 @@ export const Destinations: Destination[] = [
   },
   {
     id: 7,
-    img: "/img/destinations/SouthAfrica1.webp",
+    img: "/img/destinations/Caribe.webp",
     name: "Suiza",
   },
   {
     id: 8,
-    img: "/img/destinations/SouthAfrica1.webp",
+    img: "/img/destinations/SouthAfrica.webp",
     name: "España",
   },
 ];

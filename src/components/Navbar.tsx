@@ -55,7 +55,12 @@ function Navbar({ data }: Props) {
               to={"/"}
               className="btn btn-ghost text-xl hidden sm:inline-flex"
             >
-              EasyXplorer
+              <img
+                src="/img/logoWebShort.svg"
+                alt="Logo de EasyXplorer"
+                className="object-cover h-12"
+                loading="lazy"
+              />
             </NavLink>
           </div>
           <div className="navbar-center hidden lg:flex">
@@ -73,7 +78,11 @@ function Navbar({ data }: Props) {
             </ul>
           </div>
           <div className="navbar-end">
-            <a className="btn btn-sm bg-GoldenYellow uppercase text-white hover:bg-GoldenOrange border-none outline-none">
+            <a
+              href="https://wa.me/593992791323/"
+              target="_blank"
+              className="btn btn-sm bg-GoldenYellow uppercase text-white hover:bg-GoldenOrange border-none outline-none"
+            >
               Reserva ahora
             </a>
           </div>

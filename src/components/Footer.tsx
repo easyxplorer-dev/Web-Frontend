@@ -4,16 +4,12 @@ function Footer() {
       <section className="footer">
         <aside>
           <img
-            src="/img/easyxplorerLogo.webp"
+            src="/img/logoWebLarge.svg"
             loading="lazy"
-            className="object-cover h-32 -translate-x-10 translate-y-4"
+            className="object-cover h-32"
             alt="Logo de EasyXplorer"
           />
-          <p>
-            EasyXplorer
-            <br />
-            Brindando destinos desde 2024
-          </p>
+          <p>Brindando destinos desde 2024</p>
         </aside>
         <nav>
           <h6 className="footer-title">Services</h6>

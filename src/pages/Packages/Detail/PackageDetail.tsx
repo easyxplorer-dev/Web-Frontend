@@ -61,9 +61,13 @@ function PackageDetail() {
                 </div>
               </div>
               <p className="mb-4">{currentPackage?.description}</p>
-              <button className="btn btn-warning bg-GoldenOrange text-white px-8 ml-auto transition hover:scale-110">
+              <a
+                href={`https://wa.me/593992791323/?text=Hola \nQuisiera más información acerca del paquete ${window.location.href}`}
+                target="_blank"
+                className="btn btn-warning bg-GoldenOrange text-white px-8 ml-auto transition hover:scale-110"
+              >
                 Preguntar a ventas
-              </button>
+              </a>
             </div>
             {currentPackage && currentPackage?.images.length > 1 && (
               <ImagesCarousel currentPackage={currentPackage} />

@@ -16,12 +16,12 @@ function Hero() {
     >
       <div className="hero-content text-center flex-col">
         <div className="max-w-scree-xl">
-          <p className="text-2xl uppercase font-title text-white flex justify-center items-center mx-auto flex-wrap">
+          <p className="text-2xl uppercase font-title text-white flex justify-center items-center mx-auto flex-wrap gap-4">
             <span>Bienvenido a </span>
             <img
-              src="/img/easyxplorerLogo.webp"
+              src="/img/logoWebLarge.svg"
               loading="lazy"
-              className="object-cover h-44"
+              className="object-cover h-32"
               alt="Logo de easyxplorer"
             />
           </p>
