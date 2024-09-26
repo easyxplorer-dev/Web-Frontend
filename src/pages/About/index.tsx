@@ -87,12 +87,12 @@ function About() {
           </figure>
         </article>
         <div className="my-8">
-          <div className="hero-content flex-col lg:flex-row">
+          <div className="hero-content flex-col flex-col-reverse lg:flex-row">
             <img
               src="https://plus.unsplash.com/premium_photo-1663012992954-cf8c909be7bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               className="max-w-sm rounded-lg"
             />
-            <div className="text-end">
+            <div className="text-start md:text-end">
               <h1 className="text-5xl font-bold font-title uppercase">
                 Misión
               </h1>

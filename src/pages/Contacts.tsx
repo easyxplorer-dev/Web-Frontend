@@ -85,9 +85,9 @@ function Contacts() {
   };
 
   return (
-    <section className="mx-4 md:mx-0">
+    <section className="mx-4 md:mx-0 h-full">
       <section className="max-w-7xl mx-auto py-4">
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-wrap justify-center items-center gap-6 min-h-screen">
           <article className="flex-1">
             <div className="mb-8">
               <h3 className="text-xl md:text-4xl mb-4 text-MaizeYellow">

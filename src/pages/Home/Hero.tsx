@@ -6,7 +6,6 @@ import SpeedBoat from "@components/Icons/SpeedBoat";
 import ArrowsUpDown from "@components/Icons/ArrowsUpDown";
 import Package from "@components/Icons/Package";
 import ShieldCheck from "@components/Icons/ShieldCheck";
-import ArrowsRightLeft from "@components/Icons/ArrowsRightLeft";
 
 function Hero() {
   return (
@@ -15,7 +14,7 @@ function Hero() {
       style={{ zIndex: 1, height: "calc(100vh - 68px)" }}
     >
       <div className="hero-content text-center flex-col">
-        <div className="max-w-scree-xl">
+        <div className="max-w-screen-xl">
           <p className="text-2xl uppercase font-title text-white flex justify-center items-center mx-auto flex-wrap gap-4">
             <span>Bienvenido a </span>
             <img
@@ -50,9 +49,6 @@ function Hero() {
           </HeroIcon>
           <HeroIcon label="Seguro de viajes">
             <ShieldCheck extraClassName="w-6 h-6 md:w-10 md:h-10" />
-          </HeroIcon>
-          <HeroIcon label="Importación y exportación">
-            <ArrowsRightLeft extraClassName="w-6 h-6 md:w-10 md:h-10" />
           </HeroIcon>
         </div>
       </div>
