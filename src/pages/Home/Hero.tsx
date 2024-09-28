@@ -14,17 +14,17 @@ function Hero() {
       style={{ zIndex: 1, height: "calc(100vh - 68px)" }}
     >
       <div className="hero-content text-center flex-col">
-        <div className="max-w-screen-xl">
-          <p className="text-2xl uppercase font-title text-white flex justify-center items-center mx-auto flex-wrap gap-4">
+        <div className="max-w-screen-xl mb-4">
+          <p className="text-5xl uppercase font-title text-white flex justify-center items-center mx-auto flex-wrap gap-4 mb-6">
             <span>Bienvenido a </span>
             <img
               src="/img/logoWebLarge.svg"
               loading="lazy"
-              className="object-cover h-32"
+              className="object-cover h-[10rem]"
               alt="Logo de easyxplorer"
             />
           </p>
-          <h1 className="text-4xl md:text-7xl uppercase font-title text-GoldenYellow">
+          <h1 className="text-6xl md:text-[7rem] uppercase font-title text-GoldenYellow">
             Lideres en viajes
           </h1>
         </div>

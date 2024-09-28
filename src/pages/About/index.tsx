@@ -1,29 +1,42 @@
-import TeamCard, { Member } from "./TeamCard";
+import ValueCard from "./ValueCard";
+import { Value } from "./ValueCard";
 
-const Members: Member[] = [
+const Values: Value[] = [
   {
     id: 1,
-    img: "https://randomuser.me/api/portraits/men/1.jpg",
-    name: "John Doe",
-    workstation: "Frontend Developer",
+    name: "Orientación al Cliente",
+    description:
+      "Priorizar las necesidades y deseos del cliente, proporcionando un servicio personalizado y atento para asegurar una experiencia memorable y satisfactoria.",
   },
   {
     id: 2,
-    img: "https://randomuser.me/api/portraits/women/2.jpg",
-    name: "Jane Smith",
-    workstation: "Backend Developer",
+    name: "Transparencia",
+    description:
+      "Ser claro y honesto en todas las comunicaciones, desde los costos hasta las políticas de cancelación y los detalles del viaje, para construir confianza y evitar malentendidos.",
   },
   {
     id: 3,
-    img: "https://randomuser.me/api/portraits/men/3.jpg",
-    name: "Michael Johnson",
-    workstation: "UI/UX Designer",
+    name: "Compromiso con la Calidad",
+    description:
+      "Ofrecer productos y servicios de alta calidad, asegurando que todos los detalles del viaje sean revisados y cumplan con los estándares de excelencia.",
   },
   {
     id: 4,
-    img: "https://randomuser.me/api/portraits/women/4.jpg",
-    name: "Emily Davis",
-    workstation: "Full Stack Developer",
+    name: "Innovación",
+    description:
+      "Estar al tanto de las últimas tendencias en el sector de viajes y ofrecer soluciones creativas y actualizadas que mejoren la experiencia del cliente.",
+  },
+  {
+    id: 5,
+    name: "Responsabilidad",
+    description:
+      "Actuar de manera ética y responsable, tanto en la gestión de los viajes como en la sostenibilidad y el impacto ambiental de las actividades ofrecidas.",
+  },
+  {
+    id: 6,
+    name: "Confianza",
+    description:
+      "Fomentar una relación de confianza con los clientes, demostrando integridad y consistencia en todas las transacciones y recomendaciones.",
   },
 ];
 
@@ -131,12 +144,17 @@ function About() {
           </div>
         </div>
         <section className="my-8">
-          <h2 className="text-4xl text-center font-title text-white mb-4">
-            Nuestro equipo
+          <h2 className="text-5xl text-center font-title text-white mb-2">
+            Nuestros Valores
           </h2>
-          <article className="flex gap-1 justify-evenly flex-wrap">
-            {Members.map((member) => (
-              <TeamCard member={member} key={member.id} />
+          <p className="text-white mb-6 max-w-md md:max-w-lg mx-auto">
+            Estos valores no solo ayudan a construir una buena reputación, sino
+            que también contribuyen a la fidelización de clientes y al éxito
+            sostenido de la agencia.
+          </p>
+          <article className="flex gap-2 justify-evenly flex-wrap">
+            {Values.map((value) => (
+              <ValueCard value={value} />
             ))}
           </article>
         </section>
