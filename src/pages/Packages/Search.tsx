@@ -7,11 +7,8 @@ type Props = {
 
 function Search({ handleSubmit, searchRef }: Props) {
   return (
-    <form
-      className="my-4 max-w-7xl mx-4 md:mx-auto"
-      onSubmit={(e) => handleSubmit(e)}
-    >
-      <label className="input input-bordered flex items-center gap-2 bg-white text-black">
+    <form className="my-4 max-w-7xl mx-4 md:mx-auto" onSubmit={handleSubmit}>
+      <label className="input input-bordered flex items-center gap-2 bg-transparent text-white">
         <input
           type="search"
           className="grow"
