@@ -22,7 +22,6 @@ function Contacts() {
   const handleCaptcha = (value: string | null) => {
     setIsValidRecaptcha(value ? true : false);
   };
-  console.log(recaptchaPublicKey);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
