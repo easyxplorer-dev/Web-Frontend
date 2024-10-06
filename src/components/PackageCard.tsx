@@ -23,7 +23,6 @@ function PackageCard({ item, extraClassName = "" }: Props) {
       </div>
       <div className="card-body">
         <h2 className="card-title">{item.name}</h2>
-        <p>{item.description.slice(0, 40).trim()}...</p>
         <div className="card-actions justify-end">
           <AnimatedLink
             tag={"button"}

@@ -44,7 +44,7 @@ function ImagesCarousel({ currentPackage }: Props) {
             >
               <img
                 loading="lazy"
-                className="w-52 border-b border-b-4 border-GoldenYellow rounded-lg cursor-pointer"
+                className="w-52 border-b border-b-4 border-GoldenYellow rounded-lg cursor-pointer object-cover max-h-52"
                 src={image}
                 onClick={(e) => handleClick(e)}
                 alt={`Imagen número ${idx} del paquete ${currentPackage.name}`}

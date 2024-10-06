@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 type Props = {
   icon: ReactNode;
-  time: number;
+  time: number | undefined;
   label: string;
 };
 
