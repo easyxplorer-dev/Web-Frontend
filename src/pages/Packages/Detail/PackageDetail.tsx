@@ -4,6 +4,12 @@ import { useEffect } from "react";
 import ImagesCarousel from "./ImagesCarousel";
 import AnimatedLink from "@components/AnimatedLink";
 import RecommendedCarousel from "./RecommendedCarousel";
+import Sun from "@components/Icons/Sun";
+import Moon from "@components/Icons/Moon";
+import ListInfo from "./ListInfo";
+import TimeBadge from "./TimeBadge";
+import MapPin from "@components/Icons/MapPin";
+import CaretDown from "@components/Icons/CaretDown";
 
 function PackageDetail() {
   const params = useParams();
@@ -26,8 +32,8 @@ function PackageDetail() {
         Volver
       </AnimatedLink>
       <section className="max-w-7xl mx-4 md:mx-auto my-4 mt-16">
-        <section className="grid grid-cols-1 md:grid-cols-2 mx-4 md:mx-0 gap-4">
-          <figure className="mx-auto bg-cover bg-noreapeat bg-center relative">
+        <section className="grid grid-cols-1 md:grid-cols-2 mx-4 md:mx-0 gap-8">
+          <figure className="bg-cover mx-auto bg-noreapeat bg-center relative">
             <img
               loading="lazy"
               id="packageImgPrime"
@@ -37,7 +43,7 @@ function PackageDetail() {
               alt={`Imagen del paquete ${currentPackage?.name}`}
             />
           </figure>
-          <article className="text-white">
+          <article className="text-white w-[80%]">
             <h1 className="text-4xl md:text-6xl md:pl-4">
               {currentPackage?.name}
             </h1>
@@ -60,7 +66,18 @@ function PackageDetail() {
                   ))}
                 </div>
               </div>
-              <p className="mb-4">{currentPackage?.description}</p>
+              <section className="mb-4 flex gap-2">
+                <TimeBadge
+                  icon={<Sun extraClassName="w-5 h-5 text-yellow-300" />}
+                  time={currentPackage?.days || 0}
+                  label="Días"
+                />
+                <TimeBadge
+                  icon={<Moon extraClassName="w-5 h-5 text-[#d8d6cb]" />}
+                  time={(currentPackage?.days && currentPackage.days - 1) || 0}
+                  label="Noches"
+                />
+              </section>
               <a
                 href={`https://wa.me/593992791323/?text=Hola \nQuisiera más información acerca del paquete ${window.location.href}`}
                 target="_blank"
@@ -69,21 +86,94 @@ function PackageDetail() {
                 Preguntar a ventas
               </a>
             </div>
-            {currentPackage && currentPackage?.images.length > 1 && (
-              <ImagesCarousel currentPackage={currentPackage} />
-            )}
           </article>
         </section>
-        <hr />
-        <section>
-          <h3 className="text-4xl my-8 text-center text-white">
-            Productos que recomendamos
-          </h3>
-          <RecommendedCarousel
-            data={recommendedPackages}
-            options={{ loop: true }}
-          />
+        <section className="max-w-xl ms-auto">
+          {currentPackage && currentPackage?.images.length > 1 && (
+            <ImagesCarousel currentPackage={currentPackage} />
+          )}
         </section>
+        <hr />
+        <section className="p-4">
+          <h3 className="text-2xl text-center text-white mb-8">
+            Información del paquete
+          </h3>
+          <section className="grid md:grid-cols-2 gap-8">
+            <ListInfo title="Incluye" data={currentPackage?.included} />
+            <ListInfo
+              title="Politicas de pago"
+              data={currentPackage?.payPolicy}
+            />
+            <ListInfo data={currentPackage?.notIncluded}>
+              <strong className="text-yellow-300">NO</strong> + "Incluye"
+            </ListInfo>
+            <ListInfo
+              title="Politicas de cancelación"
+              data={currentPackage?.cancelPolicy}
+            />
+          </section>
+        </section>
+        <section className="p-4 w-full">
+          <h3 className="text-2xl text-center text-white mb-8">
+            Información de los hoteles
+          </h3>
+          <section className="p-4 grid md:grid-cols-2 gap-4">
+            {currentPackage?.hotels.map((hotel) => (
+              <article
+                key={hotel.id}
+                className="transition bg-gray-700/50 rounded-lg p-4 hover:scale-105"
+              >
+                <h4 className="text-2xl text-white font-title2 text-center mb-4">
+                  {hotel.name}
+                </h4>
+                <p>{hotel.description}</p>
+
+                <div className="collapse">
+                  <input type="checkbox" />
+                  <div className="collapse-title text-base text-white font-medium text-center px-0">
+                    <div className="flex gap-1 justify-center items-center">
+                      <span>Ver lo que Incluye</span>
+                      <CaretDown extraClassName="w-6 h-6 text-white" />
+                    </div>
+                  </div>
+                  <div className="collapse-content">
+                    <ListInfo
+                      title="Politicas de pago"
+                      data={hotel.included}
+                      showTitle={false}
+                      showHover={false}
+                    />
+                  </div>
+                </div>
+                <div className="flex gap-2 flex-wrap justify-evenly mb-4 items-center">
+                  <TimeBadge
+                    icon={<Moon extraClassName="w-5 h-5 text-[#d8d6cb]" />}
+                    time={hotel.nights}
+                    label="Noches"
+                  />
+                  <span className="text-white flex items-center gap-2">
+                    <MapPin extraClassName="w-5 h-5 text-red-300" />
+                    <span>{hotel.city}</span>
+                  </span>
+                </div>
+              </article>
+            ))}
+          </section>
+        </section>
+        <hr />
+        {recommendedPackages.length > 0 && (
+          <>
+            <section>
+              <h3 className="text-4xl my-8 text-center text-white">
+                Productos que recomendamos
+              </h3>
+              <RecommendedCarousel
+                data={recommendedPackages}
+                options={{ loop: true }}
+              />
+            </section>
+          </>
+        )}
       </section>
     </>
   );
