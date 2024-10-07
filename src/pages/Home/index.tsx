@@ -14,12 +14,12 @@ function Home() {
           Conoce nuestros destinos
         </h2>
         <Carousel
-          data={Destinations.slice(0, 6)}
+          data={Destinations.slice(0, 5)}
           extraClassName="mb-14 max-w-screen-2xl mx-auto"
           direction="forward"
         />
         <Carousel
-          data={Destinations.slice(2)}
+          data={Destinations.slice(5)}
           extraClassName="max-w-screen-2xl mx-auto"
           direction="backward"
         />

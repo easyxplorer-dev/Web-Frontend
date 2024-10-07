@@ -11,16 +11,15 @@ function PackageCard({ item, extraClassName = "" }: Props) {
     <div
       className={`card bg-[#24262F] w-full transition hover:scale-105 border-t-4 border-t border-GoldenYellow max-w-md md:max-w-auto mx-auto md:mx-0 ${extraClassName}`}
     >
-      <figure>
+      <figure className="max-h-[205px] h-full">
         <img
           src={item.images[0]}
           style={{ viewTransitionName: `packageImg${item.id}` }}
           alt={`Imagen del paquete ${item.name}`}
+          className="object-cover h-full"
+          loading="lazy"
         />
       </figure>
-      <div className="badge bg-blue-500 border-none text-white font-semibold mt-2 mx-8 p-3 min-w-[5rem]">
-        {item.category}
-      </div>
       <div className="card-body">
         <h2 className="card-title">{item.name}</h2>
         <div className="card-actions justify-end">

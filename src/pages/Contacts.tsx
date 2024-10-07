@@ -8,7 +8,6 @@ import Mail from "@components/Icons/Mail";
 import BrandWhatsApp from "@components/Icons/BrandWhatsApp";
 import BrandInstagram from "@components/Icons/BrandInstagram";
 import BrandFacebook from "@components/Icons/BrandFacebook";
-import BrandX from "@components/Icons/BrandX";
 import User from "@components/Icons/User";
 const recaptchaPublicKey = import.meta.env.VITE_RECAPTCHA_PUBLIC_KEY;
 const emailJsServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -104,15 +103,13 @@ function Contacts() {
               </h3>
               <div className="flex items-center gap-2 text-white">
                 <Phone extraClassName="w-5 h-5" />
-                <p className="text-gray-400">+593 000 0000</p>
-              </div>
-              <div className="flex items-center gap-2 text-white">
-                <Phone extraClassName="w-5 h-5" />
-                <p className="text-gray-400">+593 111 1111</p>
+                <p className="text-gray-400">+593 99 279 1323</p>
               </div>
               <div className="flex items-center gap-2 text-white">
                 <Mail extraClassName="w-5 h-5" />
-                <p className="text-gray-400">example@easyxplorer.com</p>
+                <p className="text-gray-400">
+                  atencionalcliente@easyxplorer.vacations
+                </p>
               </div>
             </div>
             <div className="mb-8">
@@ -121,28 +118,22 @@ function Contacts() {
               </h3>
               <div className="flex flex-wrap gap-4">
                 <SocialsCard
-                  url=""
+                  url="https://wa.me/593992791323/"
                   extraClassName="hover:bg-[#4dc247] hover:text-white"
                 >
                   <BrandWhatsApp extraClassName="w-8 h-8" />
                 </SocialsCard>
                 <SocialsCard
-                  url=""
+                  url="https://www.instagram.com/easyxplorerec/"
                   extraClassName="hover:bg-gradient-to-r hover:from-[#833ab4] hover:via-[#fd1d1d] hover:to-[#fcb045] hover:text-white"
                 >
                   <BrandInstagram extraClassName="w-8 h-8" />
                 </SocialsCard>
                 <SocialsCard
-                  url=""
+                  url="https://www.facebook.com/profile.php?id=61565504110551/"
                   extraClassName="hover:bg-[#3b5998] hover:text-white"
                 >
                   <BrandFacebook extraClassName="w-8 h-8" />
-                </SocialsCard>
-                <SocialsCard
-                  url=""
-                  extraClassName="hover:bg-black hover:text-white"
-                >
-                  <BrandX extraClassName="w-8 h-8" />
                 </SocialsCard>
               </div>
             </div>

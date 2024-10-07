@@ -102,7 +102,7 @@ function About() {
         <div className="my-8">
           <div className="hero-content flex-col flex-col-reverse lg:flex-row">
             <img
-              src="https://plus.unsplash.com/premium_photo-1663012992954-cf8c909be7bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/img/index/misison.avif"
               className="max-w-sm rounded-lg"
             />
             <div className="text-start md:text-end">
@@ -138,7 +138,7 @@ function About() {
               </p>
             </div>
             <img
-              src="https://plus.unsplash.com/premium_photo-1663012992954-cf8c909be7bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/img/index/vision.avif"
               className="max-w-sm rounded-lg "
             />
           </div>
@@ -152,9 +152,9 @@ function About() {
             que también contribuyen a la fidelización de clientes y al éxito
             sostenido de la agencia.
           </p>
-          <article className="flex gap-2 justify-evenly flex-wrap">
+          <article className="flex gap-8 justify-evenly flex-wrap">
             {Values.map((value) => (
-              <ValueCard value={value} />
+              <ValueCard key={value.id} value={value} />
             ))}
           </article>
         </section>

@@ -28,17 +28,27 @@ export const Destinations: Destination[] = [
   },
   {
     id: 6,
-    img: "https://media.istockphoto.com/id/1971796553/es/foto/pareja-joven-est%C3%A1-de-pie-en-la-cima-de-la-monta%C3%B1a-con-una-gran-vista.jpg?s=2048x2048&w=is&k=20&c=qjNEotbFL0U4BTEv1C0AtF7MyMJC-7Dn-djrx-UIW6k=",
-    name: "Argentina",
+    img: "/img/destinations/Caribe.webp",
+    name: "Caribe",
   },
   {
     id: 7,
-    img: "/img/destinations/Caribe.webp",
-    name: "Suiza",
+    img: "/img/destinations/Dubai.avif",
+    name: "Dubai",
   },
   {
     id: 8,
-    img: "/img/destinations/SouthAfrica.webp",
+    img: "/img/destinations/Espana.avif",
     name: "España",
+  },
+  {
+    id: 9,
+    img: "/img/destinations/EstadosUnidos.avif",
+    name: "Estados Unidos",
+  },
+  {
+    id: 10,
+    img: "/img/destinations/Galapagos.avif",
+    name: "Galápagos",
   },
 ];

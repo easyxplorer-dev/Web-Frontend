@@ -91,7 +91,7 @@ function PackageDetail() {
               </div>
             </div>
             <section className="max-w-xl ms-auto">
-              {currentPackage && currentPackage?.images.length > 1 && (
+              {currentPackage && currentPackage.images.length > 1 && (
                 <ImagesCarousel currentPackage={currentPackage} />
               )}
             </section>

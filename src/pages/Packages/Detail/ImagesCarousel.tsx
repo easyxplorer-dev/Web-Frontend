@@ -38,13 +38,13 @@ function ImagesCarousel({ currentPackage }: Props) {
         <div className="embla__container flex">
           {currentPackage?.images.slice(1).map((image, idx) => (
             <figure
-              className="embla__slide object-cover mr-2"
+              className="embla__slide object-cover mr-2 max-h-[130px]"
               key={idx}
               style={{ flex: "0 0 35%" }}
             >
               <img
                 loading="lazy"
-                className="w-52 border-b border-b-4 border-GoldenYellow rounded-lg cursor-pointer object-cover max-h-52"
+                className="w-52 border-b border-b-4 border-GoldenYellow rounded-lg cursor-pointer object-cover h-full"
                 src={image}
                 onClick={(e) => handleClick(e)}
                 alt={`Imagen número ${idx} del paquete ${currentPackage.name}`}

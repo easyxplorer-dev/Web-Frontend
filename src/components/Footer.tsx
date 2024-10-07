@@ -9,7 +9,7 @@ function Footer() {
             className="object-cover h-32"
             alt="Logo de EasyXplorer"
           />
-          <p>Brindando destinos desde 2024</p>
+          <p>Líderes en viajes</p>
         </aside>
         <nav>
           <h6 className="footer-title">Legal</h6>
