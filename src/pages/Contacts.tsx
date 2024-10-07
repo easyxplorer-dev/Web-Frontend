@@ -130,7 +130,7 @@ function Contacts() {
                   <BrandInstagram extraClassName="w-8 h-8" />
                 </SocialsCard>
                 <SocialsCard
-                  url="https://www.facebook.com/profile.php?id=61565504110551/"
+                  url="https://www.facebook.com/profile.php?id=61565504110551"
                   extraClassName="hover:bg-[#3b5998] hover:text-white"
                 >
                   <BrandFacebook extraClassName="w-8 h-8" />
