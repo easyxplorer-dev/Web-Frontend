@@ -6,6 +6,7 @@ import { Stars } from "@components/Stars";
 import TopScrollBtn from "@components/TopScrollBtn";
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import { NavItems } from "./data/NavItems";
 
 import ArrowUp from "@components/Icons/ArrowUp";
@@ -33,6 +34,7 @@ function Layout() {
         <ArrowUp extraClassName="w-7 h-7" />
       </TopScrollBtn>
       <Footer />
+      <Analytics />
     </main>
   );
 }
