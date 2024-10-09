@@ -6,6 +6,7 @@ import Logos from "./Logos";
 import ReviewStat from "@components/ReviewStat";
 import { Reviews } from "src/data/Reviews";
 import ReviewCard from "@components/ReviewCard";
+import { Helmet } from "react-helmet";
 
 function Home() {
   const reviewsStats: Record<number, number> = {
@@ -23,6 +24,9 @@ function Home() {
   });
   return (
     <>
+      <Helmet>
+        <title>Home | EasyXplorer - Viajar nunca fue tan fácil</title>
+      </Helmet>
       <Hero />
 
       <section className="" id="destinations">

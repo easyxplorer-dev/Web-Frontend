@@ -11,6 +11,7 @@ import TimeBadge from "./TimeBadge";
 import MapPin from "@components/Icons/MapPin";
 import CaretDown from "@components/Icons/CaretDown";
 import Star from "@components/Icons/Star";
+import { Helmet } from "react-helmet";
 
 function PackageDetail() {
   const params = useParams();
@@ -29,6 +30,65 @@ function PackageDetail() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          {currentPackage?.name} | EasyXplorer - Viajar nunca fue tan fácil
+        </title>
+        <meta
+          name="description"
+          content={`Descubre ${
+            currentPackage?.name
+          } con nuestros increíbles paquetes de viaje. Incluye ${
+            currentPackage?.days
+          } días y ${
+            currentPackage?.days ? currentPackage.days - 1 : 0
+          } noches con vuelos, alojamiento, y tours personalizados. ¡Reserva ahora y vive una experiencia inolvidable en ${
+            currentPackage?.name
+          }!`}
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content={`${currentPackage?.name} | EasyXplorer - Viajar nunca fue tan fácil`}
+        />
+        <meta
+          name="og:description"
+          content={`Descubre ${
+            currentPackage?.name
+          } con nuestros increíbles paquetes de viaje. Incluye ${
+            currentPackage?.days
+          } días y ${
+            currentPackage?.days ? currentPackage.days - 1 : 0
+          } noches con vuelos, alojamiento, y tours personalizados. ¡Reserva ahora y vive una experiencia inolvidable en ${
+            currentPackage?.name
+          }!`}
+        />
+        <meta name="og:image" content={currentPackage?.images[0]} />
+        <meta name="og:url" content={window.location.href} />
+        <meta property="og:site_name" content="EasyXplorer" />
+        <meta
+          property="twitter:title"
+          content={`${currentPackage?.name} | EasyXplorer - Viajar nunca fue tan fácil`}
+        />
+        <meta
+          name="twitter:description"
+          content={`Descubre ${
+            currentPackage?.name
+          } con nuestros increíbles paquetes de viaje. Incluye ${
+            currentPackage?.days
+          } días y ${
+            currentPackage?.days ? currentPackage.days - 1 : 0
+          } noches con vuelos, alojamiento, y tours personalizados. ¡Reserva ahora y vive una experiencia inolvidable en ${
+            currentPackage?.name
+          }!`}
+        />
+        <meta name="twitter:image" content={currentPackage?.images[0]} />
+        <meta
+          name="keywords"
+          content={`paquetes de viaje, viajes a ${currentPackage?.name}, vacaciones en ${currentPackage?.name}, ofertas de viajes, vuelos a ${currentPackage?.name}, alojamiento en ${currentPackage?.name}, tours en ${currentPackage?.name}, escapadas a ${currentPackage?.name}, viajes todo incluido ${currentPackage?.name}, turismo en ${currentPackage?.name}, ${currentPackage?.name}`}
+        />
+        <meta name="copyright" content="Copyright 2024. EasyXplorer." />
+      </Helmet>
       <AnimatedLink to={"/packages"} tag={"button"} extraClassName="btn m-6">
         Volver
       </AnimatedLink>

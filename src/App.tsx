@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import { NavItems } from "./data/NavItems";
+import { Helmet } from "react-helmet";
 
 import ArrowUp from "@components/Icons/ArrowUp";
 
@@ -22,6 +23,9 @@ function Layout() {
   }, []);
   return (
     <main className="overflow-x-hidden relative">
+      <Helmet>
+        <title>Home | EasyXplorer - Viajar nunca fue tan fácil</title>
+      </Helmet>
       <Stars />
       <Meteors />
       <Background />
