@@ -15,7 +15,7 @@ function Hero() {
     >
       <div className="hero-content text-center flex-col">
         <div className="max-w-screen-xl mb-4">
-          <p className="text-5xl uppercase font-title text-white flex justify-center items-center mx-auto flex-wrap gap-4 mb-6">
+          <p className="text-5xl uppercase rajdhani-medium text-white flex justify-center items-center mx-auto flex-wrap gap-4 mb-6">
             <span>Bienvenido a </span>
             <img
               src="/img/logoWebLarge.svg"
@@ -24,7 +24,7 @@ function Hero() {
               alt="Logo de easyxplorer"
             />
           </p>
-          <h1 className="text-6xl md:text-[7rem] uppercase font-title text-GoldenYellow">
+          <h1 className="text-6xl md:text-[7rem] uppercase passion-one-regular text-GoldenYellow">
             Lideres en viajes
           </h1>
         </div>
