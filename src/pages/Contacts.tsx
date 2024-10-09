@@ -2,7 +2,6 @@ import Button from "@components/Button";
 import { ChangeEvent, FormEvent, ReactNode, useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "@emailjs/browser";
-import MapPin from "@components/Icons/MapPin";
 import Phone from "@components/Icons/Phone";
 import Mail from "@components/Icons/Mail";
 import BrandWhatsApp from "@components/Icons/BrandWhatsApp";
@@ -88,28 +87,30 @@ function Contacts() {
       <section className="max-w-7xl mx-auto py-4">
         <div className="flex flex-wrap justify-center items-center gap-6 min-h-screen">
           <article className="flex-1">
+            <figure className="mb-8 w-96">
+              <img src="/img/index/contacto.svg" alt="Imágen de contacto" />
+            </figure>
             <div className="mb-8">
               <h3 className="text-xl md:text-4xl mb-4 text-MaizeYellow">
-                Puedes encontrarnos en
-              </h3>
-              <div className="flex items-center gap-2 text-white">
-                <MapPin extraClassName="w-5 h-5" />
-                <p className="text-gray-400">Ubicación</p>
-              </div>
-            </div>
-            <div className="mb-8">
-              <h3 className="text-xl md:text-4xl mb-4 text-MaizeYellow">
-                O si prefieres contactarnos por
+                Puedes contactarnos por
               </h3>
               <div className="flex items-center gap-2 text-white">
                 <Phone extraClassName="w-5 h-5" />
                 <p className="text-gray-400">+593 99 279 1323</p>
               </div>
               <div className="flex items-center gap-2 text-white">
+                <Phone extraClassName="w-5 h-5" />
+                <p className="text-gray-400">02 601 4057</p>
+              </div>
+              <div className="flex items-center gap-2 text-white">
                 <Mail extraClassName="w-5 h-5" />
-                <p className="text-gray-400">
+                <a
+                  href="mailto:atencionalcliente@easyxplorer.vacations"
+                  target="_blank"
+                  className="text-gray-400 hover:underline"
+                >
                   atencionalcliente@easyxplorer.vacations
-                </p>
+                </a>
               </div>
             </div>
             <div className="mb-8">
@@ -292,6 +293,14 @@ function Contacts() {
             </form>
           </article>
         </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4805.427456676932!2d-78.47103218869835!3d-0.15588673543620626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5900f5ef3ec8f%3A0xa2d7cd0307aa6362!2sPlatinum%20Plaza%20Condominios!5e1!3m2!1ses-419!2sec!4v1728482373675!5m2!1ses-419!2sec"
+          className="w-full h-96 rounded-lg mb-8"
+          style={{ border: 0 }}
+          allowFullScreen={false}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </section>
   );

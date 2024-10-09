@@ -47,20 +47,30 @@ function About() {
         <article className="my-12 flex flex-wrap gap-4 justify-between mb-24">
           <section className="max-w-4xl mx-auto">
             <h2 className="text-5xl md:text-7xl text-white font-title font-bolder uppercase tracking-wider text-center mb-4">
-              Quienes Somos
+              Quiénes Somos
             </h2>
             <p className="text-white text-sm md:text-lg font-text max-w-lg mx-auto mb-2">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
-              aperiam? Ullam soluta animi modi commodi ea ipsa esse provident
-              accusamus dolorum aut. Ducimus mollitia eius inventore amet
-              accusantium quaerat tempore nulla in voluptate blanditiis
-              obcaecati, possimus numquam quidem sint. Eum, eveniet ad. Hic est
-              eligendi et sapiente dicta a. Reiciendis!
+              En Easy Xplorer, somos una agencia de viajes innovadora dedicada a
+              transformar la manera en que exploras el mundo. Nos especializamos
+              en ofrecer experiencias de viaje únicas y personalizadas,
+              diseñadas para superar las expectativas de nuestros clientes.
+              Nuestra pasión por la aventura y el descubrimiento se combina con
+              un enfoque creativo y un profundo conocimiento del mercado para
+              proporcionar itinerarios excepcionales que reflejan la
+              autenticidad y la emoción de cada destino.
             </p>
             <p className="text-white text-sm md:text-lg font-text max-w-lg mx-auto mb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              cum, possimus id ut facere excepturi enim aliquid deleniti ad
-              itaque.
+              Nos destacamos por nuestra capacidad para simplificar el proceso
+              de viaje, haciendo que explorar nuevos horizontes sea accesible y
+              emocionante. Con un equipo de expertos comprometidos y un servicio
+              al cliente excepcional, estamos aquí para guiarte en cada paso del
+              camino, asegurándonos de que cada viaje sea una aventura memorable
+              y enriquecedora.
+              <br />
+              En Easy Xplorer, no solo te ayudamos a planificar tus vacaciones;
+              transformamos cada viaje en una experiencia inolvidable,
+              conectándote con el mundo de una manera que solo nosotros sabemos
+              hacer.
             </p>
           </section>
           <figure className="max-w-sm relative mx-auto hidden md:block">
@@ -70,53 +80,52 @@ function About() {
               style={{
                 maskImage: "linear-gradient(black 90%, transparent)",
               }}
-              src="https://plus.unsplash.com/premium_photo-1663012992954-cf8c909be7bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.unsplash.com/photo-1574359467742-16ffd0a1b81f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2hvJTIwaSUyMGFtfGVufDB8fDB8fHww"
               alt=""
             />
             <img
               className="h-52 rounded-lg object-cover absolute top-20 left-0 -translate-x-1/2"
               loading="lazy"
-              src="https://plus.unsplash.com/premium_photo-1663012992954-cf8c909be7bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.unsplash.com/photo-1585195834027-5b28b11f473d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdobyUyMGklMjBhbXxlbnwwfHwwfHx8MA%3D%3D"
               alt=""
             />
             <img
               className="h-48 rounded-lg object-cover absolute top-8 right-0 translate-x-1/2"
               loading="lazy"
-              src="https://plus.unsplash.com/premium_photo-1663012992954-cf8c909be7bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.unsplash.com/photo-1577644609404-b426743767f8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdobyUyMGklMjBhbXxlbnwwfHwwfHx8MA%3D%3D"
               alt=""
             />
             <img
               className="h-48 rounded-lg object-cover absolute bottom-0 left-0 -translate-x-6 translate-y-8"
               loading="lazy"
-              src="https://plus.unsplash.com/premium_photo-1663012992954-cf8c909be7bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.unsplash.com/photo-1577644609404-b426743767f8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdobyUyMGklMjBhbXxlbnwwfHwwfHx8MA%3D%3D"
               alt=""
             />
             <img
               className="h-48 rounded-lg object-cover absolute bottom-0 right-0 translate-x-1/2 -translate-y-1/2"
               loading="lazy"
-              src="https://plus.unsplash.com/premium_photo-1663012992954-cf8c909be7bb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.unsplash.com/photo-1585195834027-5b28b11f473d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdobyUyMGklMjBhbXxlbnwwfHwwfHx8MA%3D%3D"
               alt=""
             />
           </figure>
         </article>
         <div className="my-8">
           <div className="hero-content flex-col flex-col-reverse lg:flex-row">
-            <img
-              src="/img/index/misison.avif"
-              className="max-w-sm rounded-lg"
-            />
+            <img src="/img/index/mision.avif" className="max-w-sm rounded-lg" />
             <div className="text-start md:text-end">
               <h1 className="text-5xl font-bold font-title uppercase">
                 Misión
               </h1>
               <p className="py-6 max-w-lg">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
-                reprehenderit molestias quaerat dicta veniam iure repudiandae
-                praesentium alias consequuntur nihil pariatur corporis quod
-                doloremque ab architecto perferendis minima illum quos
-                assumenda, voluptatum labore maiores? <br />
-                Quis similique quae quibusdam veritatis nisi accusantium minus
-                asperiores! Recusandae consectetur sapiente neque aut at iure!
+                En Easy Xplorer, nuestra misión es reinventar el arte de viajar
+                mediante la creación de experiencias personalizadas y
+                excepcionales. Nos dedicamos a conectar a los viajeros con
+                destinos auténticos y emocionantes a través de soluciones
+                innovadoras que combinan un enfoque creativo con un toque
+                humano. Nuestro compromiso es superar las expectativas de
+                nuestros clientes, ofreciendo asesoramiento experto, itinerarios
+                únicos y un servicio excepcional que haga de cada viaje una
+                aventura inolvidable.
               </p>
             </div>
           </div>
@@ -128,13 +137,15 @@ function About() {
                 Visión
               </h1>
               <p className="py-6 max-w-lg">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
-                reprehenderit molestias quaerat dicta veniam iure repudiandae
-                praesentium alias consequuntur nihil pariatur corporis quod
-                doloremque ab architecto perferendis minima illum quos
-                assumenda, voluptatum labore maiores? <br />
-                Quis similique quae quibusdam veritatis nisi accusantium minus
-                asperiores! Recusandae consectetur sapiente neque aut at iure!
+                En Easy Xplorer, nuestra visión es ser líderes en la
+                transformación del turismo global, estableciendo nuevos
+                estándares en la personalización y la innovación. Aspiramos a
+                ser la primera elección para viajeros que buscan aventuras
+                auténticas y memorables, creando un mundo donde cada destino sea
+                una experiencia única y cada viaje, una historia que contar. Nos
+                comprometemos a explorar y expandir continuamente nuestras
+                ofertas, impulsando un cambio positivo en la manera en que el
+                mundo viaja y conecta.
               </p>
             </div>
             <img
