@@ -66,6 +66,7 @@ function PackageDetail() {
         <meta name="og:image" content={currentPackage?.images[0]} />
         <meta name="og:url" content={window.location.href} />
         <meta property="og:site_name" content="EasyXplorer" />
+        <meta property="og:type" content="website" />
         <meta
           property="twitter:title"
           content={`${currentPackage?.name} | EasyXplorer - Viajar nunca fue tan fácil`}
