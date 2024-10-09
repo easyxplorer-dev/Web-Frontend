@@ -84,7 +84,7 @@ function Contacts() {
   };
 
   return (
-    <>
+    <div>
       <Helmet>
         <title>Contactos | EasyXplorer - Viajar nunca fue tan fácil</title>
       </Helmet>
@@ -310,7 +310,7 @@ function Contacts() {
           ></iframe>
         </section>
       </section>
-    </>
+    </div>
   );
 }
 

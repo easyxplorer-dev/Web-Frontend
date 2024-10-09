@@ -23,7 +23,7 @@ function Home() {
     reviewsStats[review.rating] += 1;
   });
   return (
-    <>
+    <div>
       <Helmet>
         <title>Home | EasyXplorer - Viajar nunca fue tan fácil</title>
       </Helmet>
@@ -79,7 +79,7 @@ function Home() {
           </article>
         </section>
       </section>
-    </>
+    </div>
   );
 }
 

@@ -29,7 +29,7 @@ function PackageDetail() {
   );
 
   return (
-    <>
+    <div>
       <Helmet>
         <title>
           {currentPackage?.name} | EasyXplorer - Viajar nunca fue tan fácil
@@ -254,7 +254,7 @@ function PackageDetail() {
           </>
         )}
       </section>
-    </>
+    </div>
   );
 }
 

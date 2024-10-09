@@ -8,7 +8,7 @@ function ErrorPage() {
     ? `La página a la que estás intentando acceder, no existe ${error.status}`
     : `Ha ocurrido un error ${(error as Error).message}`;
   return (
-    <>
+    <div>
       <Helmet>
         <title>{`${renderError} | EasyXplorer - Viajar nunca fue tan fácil`}</title>
       </Helmet>
@@ -23,7 +23,7 @@ function ErrorPage() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

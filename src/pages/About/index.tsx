@@ -43,7 +43,7 @@ const Values: Value[] = [
 
 function About() {
   return (
-    <>
+    <div>
       <Helmet>
         <title>Nosotros | EasyXplorer - Viajar nunca fue tan fácil</title>
       </Helmet>
@@ -180,7 +180,7 @@ function About() {
           </section>
         </section>
       </section>
-    </>
+    </div>
   );
 }
 

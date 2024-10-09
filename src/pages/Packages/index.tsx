@@ -13,7 +13,7 @@ function Packages() {
   const paginated = usePagination({ dataPerPage: PackagesPerPage });
 
   return (
-    <>
+    <div>
       <Helmet>
         <title>Paquetes | EasyXplorer - Viajar nunca fue tan fácil</title>
       </Helmet>
@@ -26,7 +26,7 @@ function Packages() {
           dataPerPage={PackagesPerPage}
         />
       </section>
-    </>
+    </div>
   );
 }
 
