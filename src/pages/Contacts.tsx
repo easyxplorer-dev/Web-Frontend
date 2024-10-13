@@ -146,7 +146,7 @@ function Contacts() {
             </article>
             <article className="flex-1">
               <header className="mb-4 space-y-2">
-                <h2 className="text-3xl md:text-5xl text-white font-title font-bold">
+                <h2 className="text-3xl md:text-5xl text-white font-title-regular font-bold">
                   Contactanos
                 </h2>
                 <p>¿Alguna pregunta? Solo escribenos un mensaje</p>

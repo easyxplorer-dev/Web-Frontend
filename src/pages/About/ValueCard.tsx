@@ -16,7 +16,7 @@ function ValueCard({ value }: Props) {
       className={`p-4 rounded-lg max-w-xs w-full ${bgCard} transition hover:scale-105`}
       key={value.id}
     >
-      <h3 className="text-2xl text-white font-title text-center">
+      <h3 className="text-2xl text-white font-title-regular text-center">
         {value.name}
       </h3>
       <p className={`text-base ${descriptionColor}`}>{value.description}</p>

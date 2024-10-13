@@ -30,7 +30,7 @@ function Home() {
       <Hero />
 
       <section className="" id="destinations">
-        <h2 className="text-4xl font-title mb-10 text-GoldenOrange uppercase text-center">
+        <h2 className="text-4xl font-title-regular mb-10 text-GoldenOrange uppercase text-center">
           Conoce nuestros destinos
         </h2>
         <Carousel
@@ -52,7 +52,7 @@ function Home() {
       <section className="max-w-screen-2xl mx-auto my-8 p-4">
         <section className="grid grid-cols-1 md:grid-cols-6">
           <article className="p-4 col-span-2 sticky top-0 h-full">
-            <h3 className="text-3xl font-bold text-white mb-4">
+            <h3 className="text-3xl font-bold text-white mb-4 font-title-regular">
               Nuestros clientes dicen
             </h3>
             <div>

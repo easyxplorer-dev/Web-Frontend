@@ -51,7 +51,7 @@ function About() {
         <section className="max-w-7xl mx-auto py-4">
           <article className="my-12 flex flex-wrap gap-4 justify-between mb-24">
             <section className="max-w-4xl mx-auto">
-              <h2 className="text-5xl md:text-7xl text-white font-title font-bolder uppercase tracking-wider text-center mb-4">
+              <h2 className="text-5xl md:text-7xl text-white font-title-regular font-bolder uppercase tracking-wider text-center mb-4">
                 Quiénes Somos
               </h2>
               <p className="text-white text-sm md:text-lg font-text max-w-lg mx-auto mb-2">
@@ -122,7 +122,7 @@ function About() {
                 className="max-w-sm rounded-lg"
               />
               <div className="text-start md:text-end">
-                <h1 className="text-5xl font-bold font-title uppercase">
+                <h1 className="text-5xl font-bold font-title-regular uppercase">
                   Misión
                 </h1>
                 <p className="py-6 max-w-lg">
@@ -142,7 +142,7 @@ function About() {
           <div className="my-8">
             <div className="hero-content flex-col lg:flex-row">
               <div className="text-start">
-                <h1 className="text-5xl font-bold font-title uppercase">
+                <h1 className="text-5xl font-bold font-title-regular uppercase">
                   Visión
                 </h1>
                 <p className="py-6 max-w-lg">
@@ -164,7 +164,7 @@ function About() {
             </div>
           </div>
           <section className="my-8">
-            <h2 className="text-5xl text-center font-title text-white mb-2">
+            <h2 className="text-5xl text-center font-title-regular text-white mb-2">
               Nuestros Valores
             </h2>
             <p className="text-white mb-6 max-w-md md:max-w-lg mx-auto">

@@ -5,7 +5,7 @@ function Logos() {
   return (
     <section className="bg-transparent mb-14">
       <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-        <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
+        <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl font-title-regular">
           Trabajamos con las mejores marcas
         </h2>
         <div className="text-gray-500 dark:text-gray-400 flex flex-wrap gap-4 items-center justify-evenly">

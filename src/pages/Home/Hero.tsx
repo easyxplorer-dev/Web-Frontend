@@ -24,7 +24,7 @@ function Hero() {
               alt="Logo de easyxplorer"
             />
           </p>
-          <h1 className="text-6xl md:text-[7rem] uppercase passion-one-regular text-GoldenYellow">
+          <h1 className="text-6xl md:text-[7rem] uppercase font-title-regular text-GoldenYellow">
             Lideres en viajes
           </h1>
         </div>
