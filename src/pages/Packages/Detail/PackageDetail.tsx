@@ -113,7 +113,7 @@ function PackageDetail() {
               <div className="my-6 md:border-l-4 border-gray-400 py-4 md:px-4 flex flex-col gap-4">
                 <div className="flex justify-between gap-4 items-center">
                   <div className="badge badge-outline text-lg px-6 py-4  hover:bg-blue-400 hover:border-blue-400 hover:text-black">
-                    ${currentPackage?.price}
+                    {currentPackage?.price}
                   </div>
                   <div className="flex gap-2">
                     {currentPackage?.stars.map((_, idx) => (

@@ -13,12 +13,12 @@ export const Partners: Partner[] = [
   },
   {
     id: 3,
-    img: "/img/partners/marriott.svg",
-    name: "Marriott",
+    img: "/img/partners/wyndhamHotels.svg",
+    name: "Wyndham",
   },
   {
     id: 4,
-    img: "/img/partners/wyndhamHotels.svg",
-    name: "Wyndham",
+    img: "/img/partners/marriott.svg",
+    name: "Marriott",
   },
 ];
