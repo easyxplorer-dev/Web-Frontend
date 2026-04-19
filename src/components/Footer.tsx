@@ -40,7 +40,7 @@ function Footer() {
           </a>{" "}
           and{" "}
           <a
-            href="https://junior-dev.vercel.app/"
+            href="https://juniorz.dev"
             className="text-blue-400 font-bold hover:underline"
             target="_blank"
           >
